@@ -6,7 +6,7 @@ const formInput = document.getElementById('address')! as HTMLInputElement;
 
 const apiKey = '';
 
-declare const google: any;
+// declare const google: any;
 
 function handleSearch (e:Event) {
   e.preventDefault();
@@ -14,7 +14,7 @@ function handleSearch (e:Event) {
 
   // api call for cd
   type googleAPI = {
-    results: {geometry: { location: {lat: number, long: number}}}[];
+    results: {geometry: { location: {lat: number, lng: number}}}[];
     status: 'OK' | 'ZERO_RESULTS';
   };
 
